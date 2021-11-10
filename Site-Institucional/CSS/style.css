@@ -1,187 +1,83 @@
-/*	GERAL STYLES	*/
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-
-body,
-h1,
-h2,
-p,
-ul,
-li,
-a {
-  margin: 0px;
-  padding: 0px;
-}
-
 body {
-  background-color: #171717;
-  font-family: "DM Sans", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-i {
-  color: #00bfff;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/*	NAV STYLES	*/
-.menu {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 35px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.menu a {
-  color: #f9f9f9;
-  padding: 10px;
-}
-
-.menu-logo {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.menu-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.menu-nav a {
-  font-size: 18px;
-  color: #f9f9f9;
-  margin: 0 10px;
-}
-
-.menu a:hover {
-  color: #00bfff;
-  background-color: #212121;
-  text-decoration: none;
-}
-
-/*	INTRO STYLES	*/
-.intro {
-  color: #f9f9f9;
-  padding: 80px;
-}
-
-.intro h2 {
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.intro span {
-  font-size: 18px;
-  color: #cfcaca;
-}
-
-h1{
-  font-size: 18px;
-  color: #cfcaca;
-
-
-}
-
-.subTitlo{
-  font-size: 18px;
-  color: #828282;
-
-
-}
-
-.buttons {
-  padding: 35px 0;
-}
-
-.buttons a:hover {
-  text-decoration: none;
-}
-
-
-
-.btn-contact {
-  color: #f9f9f9;
-  font-size: 14px;
-  padding: 12px 19px;
-  margin-right: 10px;
-  border: 1px solid #333333;
-}
-
-.btn-contact:hover {
-  background-color: #00bfff;
-  border: none;
-  color: #171717;
-}
-
-/*	ABOUT STYLES	*/
-.about h1 {
-  font-size: 32px;
-  color: #f9f9f9;
-  font-weight: 700;
-  padding: 30px;
-  padding-left: 25px;
-}
-
-.about p {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 400;
-  color: #828282;
-  margin: 0 18%;
-  padding-left: 25px;
-}
-
-/*	CONTACT STYLES	*/
-.contacts {
-  padding: 90px 0;
-}
-
-.contacts i {
-  font-size: 26px;
-  background-color: #212121;
-  border-radius: 50%;
-  padding: 20px;
-}
-
-.contacts h3 {
-  color: #f9f9f9;
-  font-size: 18px;
-  font-weight: 700;
-  padding-top: 30px;
-}
-
-.contacts span {
-  font-size: 16px;
-  color: #828282;
-}
-
-
-
-
-
-
-.contacts{
-  padding-left: 25px ;
-}
-
-.footer{
-  padding-left: 25px;
-}
-
+    padding: 0 auto;
+    margin: 0 auto;
+    background-image: url(../img/banner.jpeg);
+    /*background-repeat: no-repeat;*/
+    }
+    
+    .menu-principal {
+    width: 100%;
+    background-color: #252323;
+    height: 60px;
+    }
+    main, .content {
+    margin: 0 auto;
+    width: 980px;
+    position: relative; /*O position relative posiciona o elemento em relação a si mesmo. Ou seja, o ponto zero será o canto superior esquerdo, e ele começará a contar a partir dali*/
+    }
+    .logo {
+     float: left;
+     padding: 16px;
+     width: 70%;
+    }
+    .redes-sociais ul li {
+    margin-left: 25px;
+    display: inline-block;
+    float: left;
+    list-style: none;
+    }
+    .redes-sociais {
+    width: 25%;
+    float: right;
+    }
+    .header-2 {
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+    }
+    .menu-urls {
+    height: 80px;
+    border-bottom: 3px solid #efefef;
+    }
+    .menu ul li {
+        display: inline-block;
+        color: #8b8b8b;
+        margin-left: 15px;
+        height: 50px;
+    }
+    
+    .menu ul li:hover {   /* O hover CSS é uma pseudo-classe da linguagem de estilos que permite a criação de diversos efeitos interessantes em uma página HTML.*/
+        border-bottom: 3px solid #00bac6;
+    }
+    
+    .menu ul li a:hover {
+        color: #00bac6;
+        
+    }
+    
+    .menu ul li a {
+        color: #8b8b8b;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .menu {
+    width: 70%;
+    float: left;
+    }
+    .busca {
+        text-align: center;
+        width: 30%;
+        float: right;
+    }
+    .busca input {
+        background-image: url(../img/icone-search.png);
+        background-repeat: no-repeat;
+        height: 36px;
+        padding: 12px;
+        width: 190px;
+        margin-top: 10px;
+        background-position: 96%;
+        border: 1px solid #d6d6d6;
+    }
