@@ -20,6 +20,11 @@ body {
      padding: 16px;
      width: 70%;
     }
+
+    img{
+        height: 40px;
+        width: 50px;
+    }
     .redes-sociais ul li {
     margin-left: 25px;
     display: inline-block;
@@ -32,7 +37,8 @@ body {
     }
     .header-2 {
     background-color: #ffffff;
-    width: 980px;
+    width: 1012px;
+    height: 60px;
     margin: 0 auto;
     padding: 16px;
     }
@@ -48,11 +54,11 @@ body {
     }
     
     .menu ul li:hover {   /* O hover CSS é uma pseudo-classe da linguagem de estilos que permite a criação de diversos efeitos interessantes em uma página HTML.*/
-        border-bottom: 3px solid #00bac6;
+        border-bottom: 3px solid #00bfff;
     }
     
     .menu ul li a:hover {
-        color: #00bac6;
+        color: #00bfff;
         
     }
     
