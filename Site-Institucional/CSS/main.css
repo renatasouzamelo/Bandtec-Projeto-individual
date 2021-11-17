@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,700&family=Poppins:wght@300&display=swap');
 
 body {
     padding: 0 auto;
@@ -9,8 +8,10 @@ body {
     background-size: cover; /* para preencher toda tela */
    
     }
+
+    /* header 1 */
     
-    .menu-principal {
+    .menu-principal1{
     width: 100%;
     background-color: #000000;
     height: 60px;
@@ -37,6 +38,9 @@ body {
     width: 25%;
     float: right;
     }
+
+
+    /* header 2*/
     .header-2 {
     background-color: #f5f5f5;
     
@@ -75,6 +79,8 @@ body {
     width: 70%;
     float: left;
     }
+
+    /* Menu de busca */
     .busca {
         text-align: center;
         width: 30%;
@@ -146,7 +152,7 @@ body {
     align-self: center;  /* modifica somente um item */
     justify-self: center;
     text-align: center;
-    color: #e6005a;
+    color:  #00bfff;
     margin: 0;
 
 }
@@ -174,27 +180,123 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    
 }
 
-.footer {
-    background-color: #00bfff;
-    height: 150px;
+
+
+ /*BOX-LOGIN*/
+
+
+.banner-login{
     color: #000000;
-    margin: 0;
-    padding: 0;
+    height: 550px;
+    
+}
+
+.banner-login .container{
+   
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.banner-login .card{
+    background-color:  #f5f5f5;
+    height: 400px;
+    width: 380px;
     display: flex;
     justify-content: center;
-
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap; /* define que fique dentro da div*/
+    border: 5px solid #00bfff;
+    border-radius: 10px;
+ 
 }
 
-.footer .container{
+button{
+    cursor: pointer;
+}
+
+input{
+    height: 30px;
+    width: 230px;
+    border: 2px solid #00bfff;
+    border-radius: 6px;
+}
+
+.btn{
+    font-family:"nunito";
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #00bfff;
+    width: 120px;
+    align-self: center;
+}
+
+
+form{
     display: flex;
-    justify-content: center; /*todo */
-    align-items: center;
+    flex-direction: column; /* centralizar botton  */
 }
 
-h4{
-    margin: 0;
-    padding: 0;
+h2{
+    display: flex;
+    align-self: center; 
 
 }
+
+.btn-entrar{
+    font-family:"nunito";
+    border: 2px solid #00bfff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #00bfff;
+    width: 120px;
+    align-self: center;
+}
+
+
+
+ 
+ /*Tela sobre  */
+
+ .social-sobre{
+     padding-top: 40px;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+  img{
+    position:relative;
+ 
+  }
+ /* Footer*/
+ 
+ .footer {
+     background-color: #00bfff;
+     height: 150px;
+     color:  #f5f5f5;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+ 
+ }
+ 
+ .footer .container{
+     display: flex;
+     justify-content: center; /*todo */
+     align-items: center;
+ }
+
+
