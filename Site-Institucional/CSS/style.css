@@ -9,13 +9,14 @@ body {
    
     }
 
-    /* header 1 */
+    /* header  */
     
     .menu-principal1{
     width: 100%;
     background-color: #000000;
     height: 60px;
     }
+    
     main, .content {
     margin: 0 auto;
     width: 980px;
@@ -278,8 +279,6 @@ h2{
      margin-top: 50px;
      margin-bottom: 50px;
      border-radius: 3px;
-    
-     
      width: 90%;
      height: 60vh;
      display: flex;
@@ -287,9 +286,6 @@ h2{
      align-items: center;
 }
 
-
- 
- /*Tela sobre  */
 
  .social-sobre{
      margin-left: 80px;
@@ -303,7 +299,6 @@ h2{
      gap: 30px;
      
  }
-
 
 
  .box > h1{
