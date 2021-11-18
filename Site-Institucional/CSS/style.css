@@ -4,7 +4,7 @@ body {
     padding: 0 auto;
     margin: 0 auto;
     position: relative;
-    background-image: url(../img/fundo.jpeg);
+    background-color: #ffffff;
     background-size: cover; /* para preencher toda tela */
    
     }
@@ -50,22 +50,23 @@ body {
     padding: 16px;
     }
     .menu-urls {
+    width: 100%;
     height: 80px;
-    border-bottom: 3px solid  #00bfff;
+    border-bottom: 3px solid #0068b5;
     }
     .menu ul li {
         display: inline-block;
-        color: #8b8b8b;
+        color: #ffffff;
         margin-left: 15px;
         height: 50px;
     }
     
     .menu ul li:hover {   /* O hover CSS é uma pseudo-classe da linguagem de estilos que permite a criação de diversos efeitos interessantes em uma página HTML.*/
-        border-bottom: 3px solid #00bfff;
+        border-bottom: 3px solid #0068b5;
     }
     
     .menu ul li a:hover {
-        color: #00bfff;
+        color: #0068b5;
         
     }
     
@@ -152,7 +153,7 @@ body {
     align-self: center;  /* modifica somente um item */
     justify-self: center;
     text-align: center;
-    color:  #00bfff;
+    color:  #0068b5;
     margin: 0;
 
 }
@@ -213,7 +214,7 @@ body {
     align-content: center;
     flex-direction: column;
     flex-wrap: wrap; /* define que fique dentro da div*/
-    border: 5px solid #00bfff;
+    border: 5px solid#56A1EB;
     border-radius: 10px;
  
 }
@@ -225,7 +226,7 @@ button{
 input{
     height: 30px;
     width: 230px;
-    border: 2px solid #00bfff;
+    border: 2px solid#0068b5;
     border-radius: 6px;
 }
 
@@ -237,7 +238,7 @@ input{
     font-size: 18px;
     padding: 10px 15px;
     color: white;
-    background-color: #00bfff;
+    background-color: #0068b5;
     width: 120px;
     align-self: center;
 }
@@ -256,47 +257,60 @@ h2{
 
 .btn-entrar{
     font-family:"nunito";
-    border: 2px solid #00bfff;
+    border: 2px solid #0068b5;
     border-radius: 5px;
     font-weight: 600;
     font-size: 18px;
     padding: 10px 15px;
-    color: #00bfff;
+    color: #0068b5;
     width: 120px;
     align-self: center;
 }
 
+
+/*Conteudo interno */
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    background-color: #548fad;
+    color: white;
+    margin-left: 80px;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     border-radius: 3px;
+    
+     
+     width: 90%;
+     height: 60vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
 
 
  
  /*Tela sobre  */
 
  .social-sobre{
-     padding-top: 40px;
-     padding-left: 20px;
-     padding-right: 20px;
- }
-  img{
-    position:relative;
- 
-  }
- /* Footer*/
- 
- .footer {
-     background-color: #00bfff;
-     height: 150px;
-     color:  #f5f5f5;
-     margin: 0;
-     padding: 0;
+     margin-left: 80px;
+     margin-top: 50px;
+     width: 90%;
+     height: 60vh;
      display: flex;
      justify-content: center;
- 
- }
- 
- .footer .container{
-     display: flex;
-     justify-content: center; /*todo */
      align-items: center;
+
+     gap: 30px;
+     
  }
+
+
+
+ .box > h1{
+     color: rgb(28, 55, 80);
+ }
+
+ 
+
 
 
