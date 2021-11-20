@@ -4,10 +4,12 @@ body {
     padding: 0 auto;
     margin: 0 auto;
     position: relative;
-    background-color: #ffffff;
+    
     background-size: cover; /* para preencher toda tela */
    
     }
+
+    
 
     /* header  */
     
@@ -272,24 +274,36 @@ h2{
 /*Conteudo interno */
 .conteudo{
     display: flex;
-    justify-content: space-between;
-    background-color: #548fad;
-    color: white;
-    margin-left: 80px;
-     margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+   
+    color: rgb(22, 6, 6);
+    margin-left: 50px;
+     margin-top: 10px;
      margin-bottom: 50px;
+     padding-left: 300px;
      border-radius: 3px;
-     width: 90%;
-     height: 60vh;
+     width: 60%;
+     height: 70vh;
      display: flex;
      justify-content: center;
      align-items: center;
 }
 
 
+.conteudo_gif{
+    display: flex;
+    justify-content: center;
+   
+    padding-top: 100px;
+    
+}
+
+
  .social-sobre{
      margin-left: 80px;
      margin-top: 50px;
+     margin-bottom: 50px;
      width: 90%;
      height: 60vh;
      display: flex;
@@ -306,6 +320,4 @@ h2{
  }
 
  
-
-
 
