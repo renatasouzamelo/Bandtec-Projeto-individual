@@ -27,16 +27,16 @@ body {
     .logo {
      float: left;
      padding: 16px;
-     width: 70%;
+     width: 25%;
     }
-
 
     .redes-sociais ul li {
-    margin-left: 25px;
-    display: inline-block;
-    float: left;
-    list-style: none;
+        margin-left: 15px;
+        display: inline-block;
+        float: left;
+       
     }
+
     .redes-sociais {
     width: 25%;
     float: right;
@@ -89,6 +89,7 @@ body {
         text-align: center;
         width: 30%;
         float: right;
+       
         
 
     }
@@ -100,6 +101,7 @@ body {
         padding: 12px;
         width: 190px;
         margin-top: 10px;
+        margin-right: 90px;
         background-position: 96%;
         border: 1px solid #d6d6d6;
     }
@@ -294,14 +296,13 @@ h2{
 .conteudo_gif{
     display: flex;
     justify-content: center;
-   
     padding-top: 100px;
     
 }
 
 
  .social-sobre{
-     margin-left: 80px;
+     margin-left: 70px;
      margin-top: 50px;
      margin-bottom: 50px;
      width: 90%;
@@ -318,6 +319,65 @@ h2{
  .box > h1{
      color: rgb(28, 55, 80);
  }
+/*SLIDER INDEX */
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/anterior.png);
+    top: 35%;
+    left: 14%;
+}
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/proximo.png);
+    top: 35%;
+    right: 14%;
+}
+.slick-list {
+    width: 100%!important;
+}
+.slick-initialized {
+    overflow: hidden;
+}
+.slick-dots li button {
+    font-size: 0px;
+    border: 5px solid #ffffff;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
 
- 
+}
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+}
 
+li.slick-active button {
+    background: #00bac6;
+}
+
+.slick-dots li {
+    padding-left: 10px;
+    display: inline-block;
+}
