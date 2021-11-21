@@ -4,7 +4,7 @@ body {
     padding: 0 auto;
     margin: 0 auto;
     position: relative;
-    
+    overflow:scroll;
     background-size: cover; /* para preencher toda tela */
    
     }
