@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Projeto-Bandtec</title>
+</head>
+
+<body>
+
+    <body>
+
+        <!-- ---------------------------- HEADER-INICIO---------------------------- -->
+        <header class="menu-principal1">
+            <main>
+                <div class="header-1">
+                    <div class="logo">
+                        <img src="" alt="">
+                    </div>
+                    <div class="redes-sociais">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./img/whats.png" style="width: 30px;"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/renataMelo88" target="blank">
+                                    <img src="./img/gitHub.jpeg" style="width: 30px;" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/renata-souza-melo-44a548101/" target="blank">
+                                    <img src="./img/linkedin.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/twitter.png" style="width: 30px;" />
+                                </a>
+                            </li>   
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </header>
+        <!-- ---------------------------- HEADER 2-INICIO---------------------------- -->
+        <div class="menu-urls">
+            <div class="header-2">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./sobre.html" >Sobre</a>
+                        </li>
+                        <li><a href="./historia.html">História</a></li>
+                        
+                        <li>
+                            <a href="./cadastro.html" >Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" >Login</a>
+
+                        </li>
+                        <li>
+                            <a href="./categorias.html">Categorias</a>
+                        </li>
+                        <li>
+                            <a href="./contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ---------------------------- CAMPO DE BUSCA-INICIO---------------------------- -->
+                <div class="busca">
+                    <input placeholder="Search Something" type="search">
+                </div>
+            </div>
+        </main>
+
+        <!-- ---------------------------- BOX LOGIN-INICIO---------------------------- -->
+        <div class="banner-login">
+            <div class="container">
+                <section class="card">
+                    <!-- Formulário Registro -->
+
+                    <h2>Faça já seu cadastro!</h2>
+
+                    <form>
+                        <div class="input-nome"> <br>
+                            <label>Nome completo:</label> <br>
+                            <input type="text" placeholder="nome" id="ipt_nome"> <br>
+                        </div>
+
+                        <div class="input-mail"> <br>
+                            <label>E-mail: </label> <br>
+                            <input type="password" placeholder="e-mail" id="ipt_email"> <br>
+                        </div> <br>
+
+                        <div class="input-mail"> <br>
+                            <label>Senha: </label> <br>
+                            <input type="password" placeholder="senha" id="ipt_senha"> <br>
+                        </div> <br>
+
+
+                        <div class="botao">
+                            <button class="btn" onclick="cadastrar()">Cadastrar</button>
+                            <button class="btn-entrar" onclick="entrar()"> Entrar</button>
+
+                        </div>
+
+
+                    </form>
+
+                </section>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="container-footer">
+                <h4>Feito com dedicação por um aluno Bandtec @2021</h4>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
+
+<script>
+function cadastrar() {
+       
+
+        var nomeVar = ipt_nome.value;
+        var emailVar = ipt_email.value;
+        var senhaVar = ipt_senha.value;
+        
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "") {
+
+            window.alert("Preencha todos os campos para prosseguir!");
+            if (nomeVar == "") {
+                console.log('nome está em branco')
+            }
+            if (emailVar == "") {
+                console.log('email está em branco')
+            }
+            if (senhaVar == "") {
+                console.log('senha está em branco')
+            }
+           
+            return false;
+        }
+
+        if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
+            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+            
+            return false;
+        }
+
+        fetch("/usuarios/cadastrar", { // pega inf. do index e passa p/ o BD
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Cadastro realizado com sucesso!");
+                window.location = "login.html";
+                limparFormulario();
+                
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+           
+        });
+
+        return false;
+    }
+
+</script>

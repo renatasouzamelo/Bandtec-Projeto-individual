@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js" integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A==" crossorigin="anonymous"></script>
+    <title>Projeto-Bandtec</title>
+</head>
+
+<body>
+
+    <body>
+
+        <!-- ---------------------------- HEADER-INICIO---------------------------- -->
+        <header class="menu-principal1">
+            <main>
+                <div class="header-1">
+                    <div class="logo">
+                        <img src="" alt="">
+                    </div>
+                    <div class="redes-sociais">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./img/whats.png" style="width: 30px;"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/renataMelo88" target="blank">
+                                    <img src="./img/gitHub.jpeg" style="width: 30px;" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/renata-souza-melo-44a548101/" target="blank">
+                                    <img src="./img/linkedin.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/twitter.png" style="width: 30px;" />
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </header>
+        <!-- ---------------------------- HEADER 2-INICIO---------------------------- -->
+        <div class="menu-urls">
+            <div class="header-2">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./sobre.html" >Sobre</a>
+                        </li>
+                        <li><a href="./historia.html">História</a></li>
+                        
+                        <li>
+                            <a href="./cadastro.html" >Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="./login.html" >Login</a>
+
+                        </li>
+                        <li>
+                            <a href="./categorias.html">Categorias</a>
+                        </li>
+                        <li>
+                            <a href="./contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------------------------- CAMPO DE BUSCA-INICIO---------------------------- -->
+                <div class="busca">
+                    <input placeholder="Search Something" type="search">
+                </div>
+            </div>
+        </main>
+
+
+<!------------------------------- DASBOARD ---------------------------------------------->
+              
+<div class="mychart" style="width: 40%; height: 100px;">
+    <canvas width="100" height="400" id="myChart"></canvas>
+ </div>
+
+
+</body>
+</html>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+ type: 'doughnut',
+ data: {
+     labels: ['Literatura Americana', 'Literatura Brasileira', 'Literatura Cientifica', 'Literatura de Cordel'],
+     datasets: [{
+         label: 'Clima',
+         data: [12, 19, 3, 5, 2, 3],
+         backgroundColor: [
+             'rgba(65,105,225)',
+             'rgba(100,149,237)',
+             'rgba(30,144,255)',
+             'rgba(0,191,255)',
+             'rgba(135,206,250)',
+             'rgba(135,206,235)'
+         ],
+         borderColor: [
+             'rgba(25,25,112)',
+             'rgba(25,25,112)',
+             'rgba(25,25,112)',
+             'rgba(25,25,112)',
+             'rgba(25,25,112)',
+             'rgba(25,25,112)'
+         ],
+         borderWidth: 1
+     }]
+ },
+ options: {
+     scales: {
+         y: {
+             beginAtZero: true
+         }
+     }
+ }
+});
+
+
+
+</script>        
