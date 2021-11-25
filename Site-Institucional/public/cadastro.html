@@ -110,8 +110,8 @@
 
 
                         <div class="botao">
-                            <button class="btn" onclick="cadastrar()">Cadastrar</button>
-                            <button class="btn-entrar" onclick="entrar()"> Entrar</button>
+                            <button type="button" class="btn" onclick="cadastrar()">Cadastrar</a></button>
+                            <button type="button" class="btn-entrar" onclick="entrar()">Entrar</a> </button>
 
                         </div>
 
@@ -172,7 +172,7 @@ function cadastrar() {
             body: JSON.stringify({
                 nomeServer: nomeVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
             })
         }).then(function (resposta) {
 
@@ -181,7 +181,7 @@ function cadastrar() {
             if (resposta.ok) {
                 window.alert("Cadastro realizado com sucesso!");
                 window.location = "login.html";
-                limparFormulario();
+                
                 
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
