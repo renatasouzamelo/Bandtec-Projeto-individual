@@ -82,7 +82,7 @@
 
                 <!-- ---------------------------- CAMPO DE BUSCA-INICIO---------------------------- -->
                 <div class="busca">
-                    <input placeholder="Search Something" type="search">
+                    <input id="ipt_procura" onchange="pesquisar()" placeholder="Search Something" type="search">
                 </div>
             </div>
 
@@ -90,26 +90,26 @@
                <!-----------------------------LISTA DE CATEGORIAS-------------------------------------->
 
                <div class="title_div_categorias">
-                <h2> Mais procurados </h2>
+                <h2> Mais vendidos</h2>
                </div>
                
                <div class="listaCategorias">
                   
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura1.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura2.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura3.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura4.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura5.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura6.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura7.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura8.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura9.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura10.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura11.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura12.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura13.jpeg" alt=""></a></div>
-                <div><a href="https://digital.bbm.usp.br/handle/bbm/1"><img src="./img/literatura14.jpeg" alt=""></a></div>
+                <div><a id="l1" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura.jpeg" alt=""></a></div>
+                <div><a id="l2" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura1.jpeg" alt=""></a></div>
+                <div><a id="l3" target="blank"href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura2.jpeg" alt=""></a></div>
+                <div><a id="l4" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura3.jpeg" alt=""></a></div>
+                <div><a id="l5" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura4.jpeg" alt=""></a></div>
+                <div><a id="l6" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura5.jpeg" alt=""></a></div>
+                <div><a id="l7" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura6.jpeg" alt=""></a></div>
+                <div><a id="l8" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura7.jpeg" alt=""></a></div>
+                <div><a id="l9" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura8.jpeg" alt=""></a></div>
+                <div><a id="l10" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura9.jpeg" alt=""></a></div>
+                <div><a id="l11" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura10.jpeg" alt=""></a></div>
+                <div><a id="l12" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura11.jpeg" alt=""></a></div>
+                <div><a id="l13" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1"style="display: block;"><img src="./img/literatura12.jpeg" alt=""></a></div>
+                <div><a id="l14" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura13.jpeg" alt=""></a></div>
+                <div><a id="l15" target="blank" href="https://digital.bbm.usp.br/handle/bbm/1" style="display: block;"><img src="./img/literatura14.jpeg" alt=""></a></div>
                     
               
                    
@@ -120,4 +120,186 @@
             </html>
 
 
+            <script>
+
+
+
+            function pesquisar(){
+
+            var procura = ipt_procura.value;
+            
+
+
+            if (procura == "O tatuador") {
+                l2.style.display = 'none';
+                l3.style.display = 'none';
+                l4.style.display = 'none';
+                l5.style.display = 'none';
+                l6.style.display = 'none';
+                l7.style.display = 'none';
+                l8.style.display = 'none';
+                l9.style.display = 'none';
+                l10.style.display = 'none';
+                l11.style.display = 'none';
+                l12.style.display = 'none';
+                l13.style.display = 'none';
+                l14.style.display = 'none';
+                l15.style.display = 'none';
+               
+            }
+
+            if (procura == "Arseni") {
+                l1.style.display = 'none';
+                l3.style.display = 'none';
+                l4.style.display = 'none';
+                l5.style.display = 'none';
+                l6.style.display = 'none';
+                l7.style.display = 'none';
+                l8.style.display = 'none';
+                l9.style.display = 'none';
+                l10.style.display = 'none';
+                l11.style.display = 'none';
+                l12.style.display = 'none';
+                l13.style.display = 'none';
+                l14.style.display = 'none';
+                l15.style.display = 'none';
+               
+            }
+
+            if (procura == "Dund") {
+                l1.style.display = 'none';
+                l2.style.display = 'none';
+                l4.style.display = 'none';
+                l5.style.display = 'none';
+                l6.style.display = 'none';
+                l7.style.display = 'none';
+                l8.style.display = 'none';
+                l9.style.display = 'none';
+                l10.style.display = 'none';
+                l11.style.display = 'none';
+                l12.style.display = 'none';
+                l13.style.display = 'none';
+                l14.style.display = 'none';
+                l15.style.display = 'none';
+               
+            }
+
+            if (procura == "lovecraft") {
+                l1.style.display = 'none';
+                l2.style.display = 'none';
+                l3.style.display = 'none';
+                l5.style.display = 'none';
+                l6.style.display = 'none';
+                l7.style.display = 'none';
+                l8.style.display = 'none';
+                l9.style.display = 'none';
+                l10.style.display = 'none';
+                l11.style.display = 'none';
+                l12.style.display = 'none';
+                l13.style.display = 'none';
+                l14.style.display = 'none';
+                l15.style.display = 'none';
+               
+            }
+
+
+            if (procura == "O cortiço") {
+                l1.style.display = 'none';
+                l2.style.display = 'none';
+                l3.style.display = 'none';
+                l4.style.display = 'none';
+                l6.style.display = 'none';
+                l7.style.display = 'none';
+                l8.style.display = 'none';
+                l9.style.display = 'none';
+                l10.style.display = 'none';
+                l11.style.display = 'none';
+                l12.style.display = 'none';
+                l13.style.display = 'none';
+                l14.style.display = 'none';
+                l15.style.display = 'none';
+               
+            }
+
+            if (procura == "Capitaes de areia") {
+                l1.style.display = 'none';
+                l2.style.display = 'none';
+                l3.style.display = 'none';
+                l4.style.display = 'none';
+                l5.style.display = 'none';
+                l7.style.display = 'none';
+                l8.style.display = 'none';
+                l9.style.display = 'none';
+                l10.style.display = 'none';
+                l11.style.display = 'none';
+                l12.style.display = 'none';
+                l13.style.display = 'none';
+                l14.style.display = 'none';
+                l15.style.display = 'none';
+               
+            }
+            
+
+            
+            if (procura == "Essa gente") {
+                l1.style.display = 'none';
+                l2.style.display = 'none';
+                l3.style.display = 'none';
+                l4.style.display = 'none';
+                l5.style.display = 'none';
+                l6.style.display = 'none';
+                l8.style.display = 'none';
+                l9.style.display = 'none';
+                l10.style.display = 'none';
+                l11.style.display = 'none';
+                l12.style.display = 'none';
+                l13.style.display = 'none';
+                l14.style.display = 'none';
+                l15.style.display = 'none';
+               
+            }
+
+            
+            if (procura == "Capitaes de areia") {
+                l1.style.display = 'none';
+                l2.style.display = 'none';
+                l3.style.display = 'none';
+                l4.style.display = 'none';
+                l5.style.display = 'none';
+                l7.style.display = 'none';
+                l8.style.display = 'none';
+                l9.style.display = 'none';
+                l10.style.display = 'none';
+                l11.style.display = 'none';
+                l12.style.display = 'none';
+                l13.style.display = 'none';
+                l14.style.display = 'none';
+                l15.style.display = 'none';
+               
+            }
+
+
+            if (procura == "Essa gente") {
+                l1.style.display = 'none';
+                l2.style.display = 'none';
+                l3.style.display = 'none';
+                l4.style.display = 'none';
+                l5.style.display = 'none';
+                l7.style.display = 'none';
+                l8.style.display = 'none';
+                l9.style.display = 'none';
+                l10.style.display = 'none';
+                l11.style.display = 'none';
+                l12.style.display = 'none';
+                l13.style.display = 'none';
+                l14.style.display = 'none';
+                l15.style.display = 'none';
+               
+            }
+
+
+        }
+
+            </script>
+            
                
