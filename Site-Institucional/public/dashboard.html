@@ -42,7 +42,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://twitter.com/home">
                                     <img src="./img/twitter.png" style="width: 30px;" />
                                 </a>
                             </li>
@@ -73,6 +73,10 @@
 
                         </li>
                         <li>
+                            <a href="./dashboard.html" >Historico</a>
+
+                        </li>
+                        <li>
                             <a href="./categorias.html">Categorias</a>
                         </li>
                         <li>
@@ -90,14 +94,16 @@
 
             <!------------------------------- DASBOARD ---------------------------------------------->
 
-            <div class="mychart" style="width: 40%; height: 100px;">
+            <div style="width: 40%; height: 100px;">
                 <canvas width="100" height="400" id="myChart"></canvas>
-            </div>
+                </div>
+
+                <div class="img_dash"><img src="./img/dash.gif"  alt=""></div>
+            </body>
+            </html>
+            
 
 
-    </body>
-
-</html>
 
 <script>
     var contagens = [];
@@ -126,7 +132,7 @@
                         }
                         var ctx = document.getElementById('myChart').getContext('2d');
                         var myChart = new Chart(ctx, {
-                            type: 'bar',
+                            type: 'pie',
                             data: {
                                 labels: titulos,
                                 datasets: [{

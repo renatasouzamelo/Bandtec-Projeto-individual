@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A=="crossorigin="anonymous"></script>
     <title>Projeto-Bandtec</title>
 </head>
 
@@ -25,7 +26,7 @@
                         <ul>
                             <li>
                                 <a href="">
-                                    <img src="./img/whats.png" style="width: 30px;"/>
+                                    <img src="./img/whats.png" style="width: 30px;" />
                                 </a>
                             </li>
                             <li>
@@ -43,7 +44,7 @@
                                     <img src="./img/twitter.png" style="width: 30px;" />
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -58,15 +59,15 @@
                             <a href="./index.html">Home</a>
                         </li>
                         <li>
-                            <a href="./sobre.html" >Sobre</a>
+                            <a href="./sobre.html">Sobre</a>
                         </li>
                         <li><a href="./historia.html">História</a></li>
-                        
+
                         <li>
-                            <a href="./cadastro.html" >Cadastro</a>
+                            <a href="./cadastro.html">Cadastro</a>
                         </li>
                         <li>
-                            <a href="./login.html" >Login</a>
+                            <a href="./login.html">Login</a>
 
                         </li>
                         <li>
@@ -81,54 +82,58 @@
                         </li>
                     </ul>
                 </div>
-                
+                <!-- ---------------------------- CAMPO DE BUSCA-INICIO---------------------------- -->
+                <div class="busca">
+                    <input placeholder="Search Something" type="search">
+                </div>
             </div>
-        </main>
+            </main>
 
 
-         <!-- ---------------------------- BOX CONTATO -INICIO---------------------------- -->
-         <div class="banner-login">
-            <div class="container">
-                <section class="card medio">
-        
-                    <!-- Conteúdo -->
-                    <h2>Venha nos conhecer!</h2>
-                    
-                    <form>
-                        <div class="input-cto"> <br>
-                            <label>AV: Ibirapuera - 2000 Moema</label> <br>
-                
-                        </div>
-                        
-                        <div class="input-cto"> <br>
-                            <label>CEP: 048060-000  São Paulo - SP</label> <br>
-                        </div> <br>
-        
-                        <!-- Botão -->
-  
-                   
-                        <button class="btn" onclick="entrar()"> <a target="blank" href="https://www.linkedin.com/in/renata-souza-melo-44a548101/">Contato</a></button>
-        
-        
-                       
-        
-                    </form>
-        
-                </section>
-            </div>
-        
-        </div>
+            <!------------------------------- DASBOARD ---------------------------------------------->
 
+            <div style="width: 40%; height: 100px;">
+                <canvas width="100" height="400" id="myChart"></canvas>
+                </div>
 
-
-
-        <div class="footer">
-            <div class="container-footer">
-                <h4>Feito com dedicação por um aluno Bandtec @2021</h4>
-            </div>
-        </div>
-        
-
-    </body>
-
-</html>
+                <div class="img_dash"><img src="./img/dash.gif"  alt=""></div>
+            </body>
+            </html>
+            
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                        var myChart = new Chart(ctx, {
+                            type: 'pie',
+                            data: {
+                    labels: ['Literatura Americana', 'Literarura nacional', 'Literatura cientifica'],
+                    datasets: [{
+                        label: 'Clima',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                                        'rgba(65,105,225)',
+                                        'rgba(100,149,237)',
+                                        'rgba(30,144,255)',
+                                        'rgba(0,191,255)',
+                                        'rgba(135,206,250)',
+                                        'rgba(135,206,235)'
+                                    ],
+                                    borderColor: [
+                                        'rgba(25,25,112)',
+                                        'rgba(25,25,112)',
+                                        'rgba(25,25,112)',
+                                        'rgba(25,25,112)',
+                                        'rgba(25,25,112)',
+                                        'rgba(25,25,112)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+            </script>
